@@ -31,7 +31,7 @@ mydate = datetime.datetime.now()
 cpi_photo=Image.open('Capture.PNG')
 #Country
 
-country = 'Bahrain'
+country = 'United Arab Emirates'
 #missing dataframe
 missing_bool=portal[portal['Country']==country].isnull().any().to_frame().reset_index()
 last_data_month=portal[portal['Country']==country].columns[-1]
@@ -513,7 +513,7 @@ if submit:
             df['New Base Year']=base_year_new
         
             df['New Weight']=[new_food_weight,new_alcohol_weight,new_cloth_weight,new_house_weight,new_furnish_weight,new_health_weight,new_trans_weight,new_comm_weight,new_leis_weight,
-                              new_edu_weight,new_rest_weight,new_mis_weight,'100']
+                              new_edu_weight,new_rest_weight,new_mis_weight,' ']
         st.session_state.model_button=False
         df.to_excel('CPI_online.xlsx', sheet_name='Sheet1')
 	#send email
@@ -524,9 +524,9 @@ if submit:
 
         msg['From'] = fromaddr
         msg['To'] = ", ".join(toaddr)
-        msg['Subject'] = "NEW Bahrain CPI Data"
+        msg['Subject'] = "NEW UAE CPI Data"
 
-        body = "Kindly, find attached the recently submitted CPI Data by Bahrain NSO."
+        body = "Kindly, find attached the recently submitted CPI Data by UAE NSO."
 
         msg.attach(MIMEText(body, 'plain'))
         filename = "CPI_online.xlsx"
