@@ -38,9 +38,10 @@ last_data_month=portal[portal['Country']==country].columns[-1]
 col1,col2,col3,col4=st.columns(4)
 with col1:
     st.image(cpi_photo, width=500)
-    st.markdown(f'<p style="text-align:center;color:#0d0d0c;font-family:Arial Black;font-size:20px;border-radius:0%;">United Arab Emirates</p>', unsafe_allow_html=True)
+    
 with col3:
     #Month 
+    st.markdown(f'<p style="text-align:center;color:#0d0d0c;font-family:Arial Black;font-size:20px;border-radius:0%;">United Arab Emirates</p>', unsafe_allow_html=True)
     month_radio=st.radio('Do you want to specify the month?', ['Yes', 'No'], index=1 )
     if month_radio == 'No':
         if missing_bool[missing_bool[0]==True].empty:
