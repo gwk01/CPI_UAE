@@ -41,7 +41,7 @@ with col1:
     
 with col3:
     #Month 
-    st.markdown(f'<p style="text-align:left;background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:20px;border-radius:0%;">United Arab Emirates</p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="text-align:left;color:#0d0d0c;font-family:Arial Black;font-size:30px;border-radius:0%;">United Arab Emirates</p>', unsafe_allow_html=True)
     month_radio=st.radio('Do you want to specify the month?', ['Yes', 'No'], index=1 )
     if month_radio == 'No':
         if missing_bool[missing_bool[0]==True].empty:
