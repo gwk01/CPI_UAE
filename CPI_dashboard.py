@@ -182,7 +182,7 @@ with col4:
     #gen_exp.markdown(f'<p style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">'+ str(round(total_weight,2)) + '</p>', unsafe_allow_html=True)
     #last available
     gen_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-    gen_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(gen_cpi_last)+'</span>', unsafe_allow_html=True)
+    gen_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(gen_cpi_last,2))+'</span>', unsafe_allow_html=True)
     #needed data
     gen_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
     gen_cpi = gen_exp.text_input(displayed+'             ')
@@ -202,7 +202,7 @@ else:
     food_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(food_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 food_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-food_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(food_cpi_last)+ '</span>', unsafe_allow_html=True)
+food_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(food_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 food_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 food_cpi = food_exp.text_input(displayed)
@@ -221,7 +221,7 @@ else:
     alcohol_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(alcohol_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 alcohol_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-alcohol_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(alcohol_cpi_last)+ '</span>', unsafe_allow_html=True)
+alcohol_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(alcohol_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 alcohol_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 alcohol_cpi = alcohol_exp.text_input(displayed+' ')
@@ -240,7 +240,7 @@ else:
     cloth_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(cloths_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 cloth_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-cloth_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(cloth_cpi_last)+ '</span>', unsafe_allow_html=True)
+cloth_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(cloth_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 cloth_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 cloth_cpi = cloth_exp.text_input(displayed+'  ')
@@ -259,7 +259,7 @@ else:
     house_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(house_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 house_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-house_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(house_cpi_last)+ '</span>', unsafe_allow_html=True)
+house_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(house_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 house_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 house_cpi = house_exp.text_input(displayed+'    ')
@@ -278,7 +278,7 @@ else:
     furnish_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(furnish_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 furnish_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-furnish_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(furnish_cpi_last)+ '</span>', unsafe_allow_html=True)
+furnish_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(furnish_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 furnish_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 furnish_cpi = furnish_exp.text_input(displayed+'     ')
@@ -298,7 +298,7 @@ else:
     health_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(health_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 health_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-health_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(health_cpi_last)+ '</span>', unsafe_allow_html=True)
+health_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(health_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 health_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 health_cpi = health_exp.text_input(displayed+'      ')
@@ -317,7 +317,7 @@ else:
     trans_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(trans_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 trans_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-trans_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(trans_cpi_last)+ '</span>', unsafe_allow_html=True)
+trans_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(trans_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 trans_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 trans_cpi = trans_exp.text_input(displayed+'       ')
@@ -336,7 +336,7 @@ else:
     comm_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(com_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 comm_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-comm_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(comm_cpi_last)+ '</span>', unsafe_allow_html=True)
+comm_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(comm_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 comm_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 comm_cpi = comm_exp.text_input(displayed+'        ')
@@ -355,7 +355,7 @@ else:
     leis_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(leis_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 leis_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-leis_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(leis_cpi_last)+ '</span>', unsafe_allow_html=True)
+leis_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(leis_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 leis_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 leis_cpi = leis_exp.text_input(displayed+'         ')
@@ -374,7 +374,7 @@ else:
     edu_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(edu_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 edu_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-edu_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(edu_cpi_last)+ '</span>', unsafe_allow_html=True)
+edu_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(edu_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 edu_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 edu_cpi = edu_exp.text_input(displayed+'          ')
@@ -393,7 +393,7 @@ else:
     rest_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(rest_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 rest_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-rest_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(rest_cpi_last)+ '</span>', unsafe_allow_html=True)
+rest_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(rest_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 rest_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 rest_cpi = rest_exp.text_input(displayed+'           ')
@@ -412,7 +412,7 @@ else:
     mis_exp.markdown(f'<i style="text-align:center;color:#0d0d0c;font-family:Arial;font-size:15px;border-radius:0%;">Weight: '+ str(round(mis_weight,2)) + '</i>', unsafe_allow_html=True)
 #last available
 mis_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Last Available Data</p>', unsafe_allow_html=True)
-mis_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(mis_cpi_last)+ '</span>', unsafe_allow_html=True)
+mis_exp.markdown(f'<span style="font-family:Arial;font-size:13px;">'+ str(latest_alpha)+'<br></span> <span style="margin:auto; display:table;font-family:Arial;font-size:20px;">'+ str(round(mis_cpi_last,2))+ '</span>', unsafe_allow_html=True)
 #needed data
 mis_exp.markdown(f'<p style="text-align:center; background-color:#f5f5ed;color:#0d0d0c;font-family:Arial Black;font-size:15px;border-radius:0%;">Needed Index</p>', unsafe_allow_html=True)
 mis_cpi = mis_exp.text_input(displayed+'            ')
